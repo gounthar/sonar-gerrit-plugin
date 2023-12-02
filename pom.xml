@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.32</version>
+    <version>4.51</version>
     <relativePath/>
   </parent>
 
@@ -18,8 +18,7 @@
     <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>
     <!-- Baseline Jenkins version you use to build the plugin. Users must have this version or newer to run. -->
-    <jenkins.version>2.277.4</jenkins.version>
-    <java.level>8</java.level>
+    <jenkins.version>2.346.3</jenkins.version>
     <jenkins-test-harness.version>1674.v3b8b1441e939</jenkins-test-harness.version>
     <!-- Other properties you may want to use:
          ~ hpi-plugin.version: The HPI Maven Plugin version used by the plugin..
@@ -48,7 +47,7 @@
     <dependencies>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
-        <artifactId>bom-2.249.x</artifactId>
+        <artifactId>bom-2.277.x</artifactId>
         <version>984.vb5eaac999a7e</version>
         <scope>import</scope>
         <type>pom</type>
@@ -122,7 +121,6 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>${guava.version}</version>
     </dependency>
     <dependency>
       <groupId>me.redaalaoui.gerrit_rest_java_client</groupId>
@@ -138,14 +136,12 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>${junit.jupiter.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <!-- Needed to keep jenkins-test-assertion working (see https://github.com/jenkinsci/jenkins-test-harness/pull/375) -->
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>${junit.jupiter.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -183,7 +179,6 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>4.2.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
